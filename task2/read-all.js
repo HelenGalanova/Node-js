@@ -18,8 +18,9 @@ const getText = (file) => {
         fs.readFile(file, conf, (err, data) => {
             if (err) {
                 error(err);
-            }
+            }else {
             done({name: file, content: data});
+            }
         });
     });
 };
