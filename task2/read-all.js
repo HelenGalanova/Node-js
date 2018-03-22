@@ -28,6 +28,6 @@ const getText = (file) => {
 module.exports = (path) => {
     return readData(path)
            .then(files => Promise.all(files.map((fileName) => {
-               return getText(`${path}${fileName}`)
+               return getFileContent(`${path}${fileName}`)
     })));
 };
