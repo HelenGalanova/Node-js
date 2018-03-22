@@ -6,8 +6,9 @@ const readData = (pathName) => {
         fs.readdir(pathName, (err, files) => {
             if (err) {
                 error(err);
-            }
+            }else{
             done(files);
+            }
         });
     });
 };
