@@ -13,7 +13,7 @@ const readData = (pathName) => {
     });
 };
 
-const getText = (file) => {
+const getFileContent = (file) => {
     return new Promise((done, error) => {
         fs.readFile(file, conf, (err, data) => {
             if (err) {
